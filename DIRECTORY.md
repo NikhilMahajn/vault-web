@@ -59,6 +59,7 @@
           - 📄 [PollOption.java](backend/src/main/java/vaultWeb/models/PollOption.java)
           - 📄 [PollVote.java](backend/src/main/java/vaultWeb/models/PollVote.java)
           - 📄 [PrivateChat.java](backend/src/main/java/vaultWeb/models/PrivateChat.java)
+          - 📄 [RefreshToken.java](backend/src/main/java/vaultWeb/models/RefreshToken.java)
           - 📄 [User.java](backend/src/main/java/vaultWeb/models/User.java)
           - 📁 **enums**
             - 📄 [Role.java](backend/src/main/java/vaultWeb/models/enums/Role.java)
@@ -69,15 +70,20 @@
           - 📄 [PollRepository.java](backend/src/main/java/vaultWeb/repositories/PollRepository.java)
           - 📄 [PollVoteRepository.java](backend/src/main/java/vaultWeb/repositories/PollVoteRepository.java)
           - 📄 [PrivateChatRepository.java](backend/src/main/java/vaultWeb/repositories/PrivateChatRepository.java)
+          - 📄 [RefreshTokenRepository.java](backend/src/main/java/vaultWeb/repositories/RefreshTokenRepository.java)
           - 📄 [UserRepository.java](backend/src/main/java/vaultWeb/repositories/UserRepository.java)
         - 📁 **security**
           - 📄 [EncryptionUtil.java](backend/src/main/java/vaultWeb/security/EncryptionUtil.java)
           - 📄 [JwtAuthFilter.java](backend/src/main/java/vaultWeb/security/JwtAuthFilter.java)
+          - 📄 [JwtAuthenticationEntryPoint.java](backend/src/main/java/vaultWeb/security/JwtAuthenticationEntryPoint.java)
           - 📄 [JwtUtil.java](backend/src/main/java/vaultWeb/security/JwtUtil.java)
+          - 📄 [TokenHashUtil.java](backend/src/main/java/vaultWeb/security/TokenHashUtil.java)
           - 📁 **annotations**
             - 📄 [AdminOnly.java](backend/src/main/java/vaultWeb/security/annotations/AdminOnly.java)
           - 📁 **aspects**
             - 📄 [AdminOnlyAspect.java](backend/src/main/java/vaultWeb/security/aspects/AdminOnlyAspect.java)
+          - 📁 **exception**
+            - 📄 [JwtAuthenticationException.java](backend/src/main/java/vaultWeb/security/exception/JwtAuthenticationException.java)
         - 📁 **services**
           - 📄 [ChatService.java](backend/src/main/java/vaultWeb/services/ChatService.java)
           - 📄 [DashboardService.java](backend/src/main/java/vaultWeb/services/DashboardService.java)
@@ -87,11 +93,16 @@
           - 📄 [UserService.java](backend/src/main/java/vaultWeb/services/UserService.java)
           - 📁 **auth**
             - 📄 [AuthService.java](backend/src/main/java/vaultWeb/services/auth/AuthService.java)
+            - 📄 [LoginResult.java](backend/src/main/java/vaultWeb/services/auth/LoginResult.java)
             - 📄 [MyUserDetailsService.java](backend/src/main/java/vaultWeb/services/auth/MyUserDetailsService.java)
+            - 📄 [RefreshTokenCleanupService.java](backend/src/main/java/vaultWeb/services/auth/RefreshTokenCleanupService.java)
+            - 📄 [RefreshTokenService.java](backend/src/main/java/vaultWeb/services/auth/RefreshTokenService.java)
   - 📁 **test**
     - 📁 **java**
       - 📁 **vaultWeb**
         - 📄 [BackendApplicationTests.java](backend/src/test/java/vaultWeb/BackendApplicationTests.java)
+        - 📁 **controllers**
+          - 📄 [DashboardControllerTest.java](backend/src/test/java/vaultWeb/controllers/DashboardControllerTest.java)
 
 ## frontend
 
